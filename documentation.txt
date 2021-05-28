@@ -1,0 +1,26 @@
+-- Allows to create a pnj easily
+--- @param { String } model (https://docs.fivem.net/docs/game-references/ped-models/)
+--- @param { int } pedx
+--- @param { int } pedy
+--- @param { int } pedz
+--- @param { int } pedh
+--- @param { table } pedtbl (BlockingTemporaryEvents, Freeze, Invicible)
+--- @param { table } bliptbl (Visible (default: false), x, y, z, Sprite (default: 1), Color (default: 1), Text (default: "Unknown"))
+--- @public
+CreateBasicPed(model, pedx, pedy, pedz, pedh, pedtbl)
+
+
+
+-- Allows to create a pnj easily with interaction
+--- @param { String } model (https://docs.fivem.net/docs/game-references/ped-models/)
+--- @param { int } pedx
+--- @param { int } pedy
+--- @param { int } pedz
+--- @param { int } pedh
+--- @param { table } pedtbl (BlockingTemporaryEvents, Freeze, Invicible)
+--- @param { table } bliptbl (Visible (default: false), x, y, z, Sprite (default: 1), Color (default: 1), Text (default: "Unknown"))
+--- @param { table } markertbl (Visible (default: true), Postion (default: The position of ped z-1), Type (default: 25), r (default: 0), g (default: 0), b (default: 0), a (default : 250))
+--- @param { String } helptext (default: none)
+--- @param { functions } functions (OnActive, OnInteract)
+--- @public
+function CreatePedWithInteraction(model, pedx, pedy, pedz, pedh, pedtbl, markertbl, helptext, functions)
